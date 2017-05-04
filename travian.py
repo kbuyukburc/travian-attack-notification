@@ -6,8 +6,8 @@ import pyfcm
 from pyfcm import FCMNotification
 time.sleep(1)
 def pushmessage(num):
-    push_service = FCMNotification(api_key="")
-    registration_id = ""
+    push_service = FCMNotification(api_key="")#this is your firebase account api number
+    registration_id = ""#this is your phone application number it's private for only this app
     data_message = {
     "command" : "travian",
     "village" : num
@@ -15,9 +15,9 @@ def pushmessage(num):
     result = push_service.notify_single_device(registration_id=registration_id, data_message=data_message)
     print result
 ######################    
-villages=['49008&','61055&','71714&','44591&','81062&','87958&','89674&']
+villages=['49008&','61055&','71714&','44591&','81062&','87958&','89674&'] #this is your village numbers you can see that after http://ts9.travian.com.tr/dorf1.php/?newdid=
 ts = int(time.time())
-url = 'http://ts9.travian.com.tr/dorf1.php'
+url = 'http://ts9.travian.com.tr/dorf1.php'#this is my server you should change that
 values = {'name' : 'Travianusername',
           'password' : 'Travianuserpassword',
           'w':'1300:1102',
