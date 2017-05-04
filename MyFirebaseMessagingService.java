@@ -4,9 +4,6 @@ package com.example.kbuyu.tracer;
  * Created by kbuyu on 01/04/2017.
  */
 import android.graphics.Color;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
